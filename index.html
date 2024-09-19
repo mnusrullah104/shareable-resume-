@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include html2pdf.js library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Username input -->
+        <input type="text" id="username" placeholder="Enter your username" />
+        <div class="buttons">
+            <!-- Share and download buttons -->
+            <button id="shareButton">Share Resume</button>
+            <button id="downloadButton">Download Resume</button>
+        </div>
+        
+        <!-- Resume container (editable content) -->
+        <div id="resumeContainer" contenteditable="true">
+            <h1 contenteditable="true">Muhammad Nasrullah</h1>
+            <p contenteditable="true">Web Developer</p>
+
+            <section>
+                <h2 contenteditable="true">Education</h2>
+                <p contenteditable="true">BS in Computer Science</p>
+            </section>
+
+            <section>
+                <h2 contenteditable="true">Skills</h2>
+                <ul>
+                    <li contenteditable="true">HTML</li>
+                    <li contenteditable="true">CSS</li>
+                    <li contenteditable="true">TypeScript</li>
+                    <li contenteditable="true">JavaScript</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 contenteditable="true">Experience</h2>
+                <p contenteditable="true">Worked as a Full Stack Developer at XYZ Corp.</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Linking to external TypeScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
